@@ -62,9 +62,23 @@ about.innerText = siteContent['nav']['nav-item-5'];
 let contact = document.getElementsByTagName('a')[5];
 contact.innerText = siteContent['nav']['nav-item-6'];
 
-/*****  Navigation colors *********/
+/*****  Navigation Colors *********/
 let navLinks = document.querySelectorAll("a");
 
 navLinks.forEach(item => {
   item.style.color = 'green';
 });
+
+
+/***************** Call To Action **************/
+let h1 = document.getElementsByTagName('h1')[0];
+h1.innerText = siteContent['cta']['h1'];
+
+let button = document.getElementsByTagName("button")[0];
+button.innerText = siteContent['cta']['button'];
+
+let bannerImg = document.getElementById("cta-img");
+bannerImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", "img/mid-page-accent.jpg")
