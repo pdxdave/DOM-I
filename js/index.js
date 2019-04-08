@@ -63,6 +63,7 @@ let contact = document.getElementsByTagName('a')[5];
 contact.innerText = siteContent['nav']['nav-item-6'];
 
 /*****  Navigation Colors *********/
+
 let navLinks = document.querySelectorAll("a");
 
 navLinks.forEach(item => {
@@ -71,6 +72,7 @@ navLinks.forEach(item => {
 
 
 /***************** Call To Action **************/
+
 let h1 = document.getElementsByTagName('h1')[0];
 h1.innerText = siteContent['cta']['h1'];
 
@@ -82,3 +84,36 @@ bannerImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute("src", "img/mid-page-accent.jpg")
+
+
+/***************** Main Section **************/
+
+let features_h4 = document.getElementsByTagName('h4')[0];
+features_h4.innerText = siteContent['main-content']['features-h4'];
+
+let featuresContent = document.getElementsByTagName('p')[0];
+featuresContent.innerText = siteContent['main-content']['features-content'];
+
+let about_h4 = document.getElementsByTagName('h4')[1];
+about_h4.innerText = siteContent['main-content']['about-h4'];
+
+let aboutContent = document.getElementsByTagName('p')[1];
+aboutContent.innerText = siteContent['main-content']['about-content'];
+
+let services_h4 = document.getElementsByTagName('h4')[2];
+services_h4.innerText = siteContent['main-content']['services-h4'];
+
+let servicesContent = document.getElementsByTagName('p')[2];
+servicesContent.innerText = siteContent['main-content']['services-content'];
+
+let product_h4 = document.getElementsByTagName('h4')[3];
+product_h4.innerText = siteContent['main-content']['product-h4'];
+
+let productContent = document.getElementsByTagName('p')[3];
+productContent.innerText = siteContent['main-content']['product-content'];
+
+let vision_h4 = document.getElementsByTagName('h4')[4];
+vision_h4.innerText = siteContent['main-content']['vision-h4'];
+
+let visionContent = document.getElementsByTagName('p')[4];
+visionContent.innerText = siteContent['main-content']['vision-content'];
