@@ -70,6 +70,17 @@ navLinks.forEach(item => {
   item.style.color = 'green';
 });
 
+/************** Add To Navigation  **************/
+
+const nav1 = document.createElement('a');
+nav1.textContent = "Nav1";
+const addToNav = document.querySelector('nav');
+addToNav.prepend(nav1);
+
+const nav2 = document.createElement('a');
+nav2.textContent = "Nav2";
+addToNav.appendChild(nav2);
+
 
 /***************** Call To Action **************/
 
