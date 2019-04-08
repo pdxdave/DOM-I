@@ -149,3 +149,10 @@ email.innerText = siteContent['contact']['email'];
 
 let footer = document.getElementsByTagName('p')[8];
 footer.innerText = siteContent['footer']['copyright'];
+
+/***************** Updating styles **************/
+
+h1.style.color = "orangered";
+h1.style.textShadow = "2px 2px green";
+button.style.border = "1px solid orangered";
+button.style.textContent = "orangered";
