@@ -128,3 +128,24 @@ vision_h4.innerText = siteContent['main-content']['vision-h4'];
 
 let visionContent = document.getElementsByTagName('p')[4];
 visionContent.innerText = siteContent['main-content']['vision-content'];
+
+
+/***************** Contact Section **************/
+
+let contact_h4 = document.getElementsByTagName('h4')[5];
+contact_h4.innerText = siteContent['contact']['contact-h4'];
+
+let address = document.getElementsByTagName('p')[5];
+address.innerText = siteContent['contact']['address'];
+
+let phone = document.getElementsByTagName('p')[6];
+phone.innerText = siteContent['contact']['phone'];
+
+let email = document.getElementsByTagName('p')[7];
+email.innerText = siteContent['contact']['email'];
+
+
+/***************** Footer Section **************/
+
+let footer = document.getElementsByTagName('p')[8];
+footer.innerText = siteContent['footer']['copyright'];
