@@ -40,3 +40,119 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+/*********** Navigation *************/
+
+let services = document.getElementsByTagName('a')[0];
+services.innerText = siteContent['nav']['nav-item-1'];
+
+let product = document.getElementsByTagName('a')[1];
+product.innerText = siteContent['nav']['nav-item-2'];
+
+let vision = document.getElementsByTagName('a')[2];
+vision.innerText = siteContent['nav']['nav-item-3'];
+
+let features = document.getElementsByTagName('a')[3];
+features.innerText = siteContent['nav']['nav-item-4'];
+
+let about = document.getElementsByTagName('a')[4];
+about.innerText = siteContent['nav']['nav-item-5'];
+
+let contact = document.getElementsByTagName('a')[5];
+contact.innerText = siteContent['nav']['nav-item-6'];
+
+/*****  Navigation Colors *********/
+
+let navLinks = document.querySelectorAll("a");
+
+navLinks.forEach(item => {
+  item.style.color = 'green';
+});
+
+/************** Add To Navigation  **************/
+
+const nav1 = document.createElement('a');
+nav1.textContent = "Nav1";
+const addToNav = document.querySelector('nav');
+addToNav.prepend(nav1);
+
+const nav2 = document.createElement('a');
+nav2.textContent = "Nav2";
+addToNav.appendChild(nav2);
+
+
+/***************** Call To Action **************/
+
+let h1 = document.getElementsByTagName('h1')[0];
+h1.innerText = siteContent['cta']['h1'];
+
+let button = document.getElementsByTagName("button")[0];
+button.innerText = siteContent['cta']['button'];
+
+let bannerImg = document.getElementById("cta-img");
+bannerImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute("src", "img/mid-page-accent.jpg")
+
+
+/***************** Main Section **************/
+
+let features_h4 = document.getElementsByTagName('h4')[0];
+features_h4.innerText = siteContent['main-content']['features-h4'];
+
+let featuresContent = document.getElementsByTagName('p')[0];
+featuresContent.innerText = siteContent['main-content']['features-content'];
+
+let about_h4 = document.getElementsByTagName('h4')[1];
+about_h4.innerText = siteContent['main-content']['about-h4'];
+
+let aboutContent = document.getElementsByTagName('p')[1];
+aboutContent.innerText = siteContent['main-content']['about-content'];
+
+let services_h4 = document.getElementsByTagName('h4')[2];
+services_h4.innerText = siteContent['main-content']['services-h4'];
+
+let servicesContent = document.getElementsByTagName('p')[2];
+servicesContent.innerText = siteContent['main-content']['services-content'];
+
+let product_h4 = document.getElementsByTagName('h4')[3];
+product_h4.innerText = siteContent['main-content']['product-h4'];
+
+let productContent = document.getElementsByTagName('p')[3];
+productContent.innerText = siteContent['main-content']['product-content'];
+
+let vision_h4 = document.getElementsByTagName('h4')[4];
+vision_h4.innerText = siteContent['main-content']['vision-h4'];
+
+let visionContent = document.getElementsByTagName('p')[4];
+visionContent.innerText = siteContent['main-content']['vision-content'];
+
+
+/***************** Contact Section **************/
+
+let contact_h4 = document.getElementsByTagName('h4')[5];
+contact_h4.innerText = siteContent['contact']['contact-h4'];
+
+let address = document.getElementsByTagName('p')[5];
+address.innerText = siteContent['contact']['address'];
+
+let phone = document.getElementsByTagName('p')[6];
+phone.innerText = siteContent['contact']['phone'];
+
+let email = document.getElementsByTagName('p')[7];
+email.innerText = siteContent['contact']['email'];
+
+
+/***************** Footer Section **************/
+
+let footer = document.getElementsByTagName('p')[8];
+footer.innerText = siteContent['footer']['copyright'];
+
+/***************** Updating styles **************/
+
+h1.style.color = "orangered";
+h1.style.textShadow = "2px 2px green";
+button.style.border = "1px solid orangered";
+button.style.textContent = "orangered";
